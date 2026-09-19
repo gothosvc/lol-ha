@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+CLAUDE.md
+
+# Local HA dev instance — holds real API key + summoner data in .storage/
+config/
+secrets.yaml
+.env
+.env.*
+
+.DS_Store

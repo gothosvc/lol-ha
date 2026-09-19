@@ -1,0 +1,11 @@
+{
+  "domain": "lol_ha",
+  "name": "League of Legends",
+  "codeowners": ["@gothosvc"],
+  "config_flow": true,
+  "documentation": "https://github.com/gothosvc/lol-ha",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/gothosvc/lol-ha/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

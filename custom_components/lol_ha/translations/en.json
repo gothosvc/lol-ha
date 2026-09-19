@@ -1,0 +1,59 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "data": {
+          "platform_region": "Region",
+          "game_name": "Riot ID (game name)",
+          "tag_line": "Riot ID tag (without #)",
+          "api_key": "Riot API key"
+        }
+      }
+    },
+    "error": {
+      "account_not_found": "No summoner found for that Riot ID and region",
+      "invalid_api_key": "Riot API key was rejected",
+      "cannot_connect": "Could not reach the Riot API"
+    },
+    "abort": {
+      "already_configured": "This summoner is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "idle_interval": "Idle poll interval (seconds)",
+          "queue_filter": "Queue"
+        }
+      }
+    }
+  },
+  "selector": {
+    "queue_filter": {
+      "options": {
+        "all": "All queues",
+        "ranked_solo": "Ranked solo/duo",
+        "ranked_flex": "Ranked flex",
+        "aram": "ARAM",
+        "unranked": "Unranked (normal draft)"
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "in_game": { "name": "In game" }
+    },
+    "sensor": {
+      "rank": { "name": "Rank" },
+      "league_points": { "name": "League points" },
+      "win_streak": { "name": "Win streak" },
+      "games_played": { "name": "Games played" },
+      "splits_games_played": { "name": "Split games played" },
+      "last_match_result": { "name": "Last match result" }
+    },
+    "event": {
+      "rank_change": { "name": "Rank change" }
+    }
+  }
+}
